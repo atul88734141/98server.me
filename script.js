@@ -59,23 +59,23 @@ if (getOS() == "Android") {
     function horizon(){
         let c1 , b1 , d , num1 = 0 ;
         setInterval(() => {
-            c1 = '=', b1 = '', num1 = 0, d = random(16);
+            c1 = '=', b1 = '', num1 = 0, d = random(30);
             while (c1.length < d) { num1 += 2; c1 += "="; }
-            while (b1.length < 28 - num1) { b1 = b1 + "."; };
+            while (b1.length < 54 - num1) { b1 = b1 + "."; };
             horizo.innerText = '[' + b1 + "<" + c1 + ']';
             horizo1.innerText = '[' + b1 + "<" + c1 + ']';
             horizo2.innerText = '[' + b1 + "<" + c1 + ']';
             horizo3.innerText = '[' + b1 + "<" + c1 + ']';
-            //horizo4.innerText = '[' + b1 + "<" + c1 + ']';
-            //horizo5.innerText = '[' + b1 + "<" + c1 + ']';
+            horizo4.innerText = '[' + b1 + "<" + c1 + ']';
+            horizo5.innerText = '[' + b1 + "<" + c1 + ']';
         }, 100);
     }
     function bar(bar2=true,bar1=true){
         let c = '=', b = '', num = 0;
         setTimeout(() => {
             setInterval(() => {
-                if (c.length < 12) { b = ''; num += 2; c += "="; } else { return 0 }
-                while (b.length < 22 - num) { b = b + "."; };
+                if (c.length < 16) { b = ''; num += 2; c += "="; } else { return 0 }
+                while (b.length < 28 - num) { b = b + "."; };
                 if (bar1) { elem1.innerText = '[' + c + ">" + b + ']'; }
                 if (bar2) { elem2.innerText = '[' + b + "<" + c + ']'; }
             }, 100);
