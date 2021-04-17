@@ -19,25 +19,25 @@ body{
     font-size: 70%;
     margin-top: -1%;
     font-style: italic;
-    padding-left: 27%;
+    padding-left: 25%;
 }#f0011{
     color: rgb(88, 84, 86);
     caption-side: top;
     font-size: 70%;
     margin-top: -17%;
     font-style: italic;
-    padding-left: 33%;}
+    padding-left: 25%;}
 
 #total{
     caption-side: bottom;
-    padding-left: 30%;
+    padding-left: 25%;
     color : rgb(53, 72, 241);
 }
 #space{
     color: whitesmoke;
 }
 #input{
-    margin-left: 33%;
+    margin-left: 20%;
     background-color: black;
     border: rgb(91, 144, 243) dotted 1px;
     font-size: 100%;
@@ -59,42 +59,42 @@ body{
     position: absolute;
     color: aquamarine;
     margin-left: 1%;
-    margin-top: 44%;
+    margin-top: 64%;
 }
 #horizo1{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 4%;
-    margin-top: 42%;
+    margin-left: 5%;
+    margin-top: 62%;
 }
 #horizo2{
     writing-mode: tb-rl;
     position: absolute;
     /* -webkit-transform:rotate(0deg); */
     color: aquamarine;
-    margin-left: 7%;
-    margin-top: 36%;
+    margin-left: 10%;
+    margin-top: 56%;
 }
 #horizo3{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 68%;
-    margin-top: -2.6%;
+    margin-left: 75%;
+    margin-top: 68%;
 }
 #horizo4{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 70%;
-    margin-top: -4%;
+    margin-left: 80%;
+    margin-top: 70%;
 }
 #horizo5{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 72%;
-    margin-top: -5.4%;
+    margin-left: 85%;
+    margin-top: 58%;
     
 }
