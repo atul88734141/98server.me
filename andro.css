@@ -32,6 +32,7 @@ body{
     caption-side: bottom;
     padding-left: 25%;
     color : rgb(53, 72, 241);
+    font-size:75%;
 }
 #space{
     color: whitesmoke;
@@ -82,20 +83,20 @@ body{
     position: absolute;
     color: aquamarine;
     margin-left: 75%;
-    margin-top: 66%;
+    margin-top: 56%;
 }
 #horizo4{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
     margin-left: 80%;
-    margin-top: 62%;
+    margin-top: 52%;
 }
 #horizo5{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
     margin-left: 85%;
-    margin-top: 56.5%;
+    margin-top: 50%;
     
 }
