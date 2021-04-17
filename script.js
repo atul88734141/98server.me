@@ -66,8 +66,8 @@ if (getOS() != "Android") {
             horizo1.innerText = '[' + b1 + "<" + c1 + ']';
             horizo2.innerText = '[' + b1 + "<" + c1 + ']';
             horizo3.innerText = '[' + b1 + "<" + c1 + ']';
-            horizo4.innerText = '[' + b1 + "<" + c1 + ']';
-            horizo5.innerText = '[' + b1 + "<" + c1 + ']';
+            //horizo4.innerText = '[' + b1 + "<" + c1 + ']';
+            //horizo5.innerText = '[' + b1 + "<" + c1 + ']';
         }, 100);
     }
     function bar(bar2=true,bar1=true){
