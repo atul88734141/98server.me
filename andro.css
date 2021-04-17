@@ -67,7 +67,7 @@ body{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 5%;
+    margin-left: 6%;
     margin-top: 61.7%;
 }
 #horizo2{
@@ -75,7 +75,7 @@ body{
     position: absolute;
     /* -webkit-transform:rotate(0deg); */
     color: aquamarine;
-    margin-left: 10%;
+    margin-left: 11%;
     margin-top: 56.3%;
 }
 #horizo3{
