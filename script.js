@@ -52,7 +52,7 @@ function execute() {
 }
 //---------------------checking os-----------------------------
 //
-if (getOS() != "Android") {
+if (getOS() == "Android") {
     //execute if os is android 
     document.getElementById('link').setAttribute('href', 'andro.css');
     //-------------------------functions-------------------------------
