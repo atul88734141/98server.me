@@ -79,7 +79,7 @@ if (getOS() == "Android") {
                 if (bar1) { elem1.innerText = '[' + c + ">" + b + ']'; }
                 if (bar2) { elem2.innerText = '[' + b + "<" + c + ']'; }
             }, 100);
-        }, 1000);
+        }, 100);
     }
 }
 else {
@@ -95,7 +95,7 @@ else {
                 if (bar1) { elem1.innerText = '[' + c + ">" + b + ']'; }
                 if (bar2) { elem2.innerText = '[' + b + "<" + c + ']'; }
             }, 100);
-        }, 1000);
+        }, 100);
     }
     function horizon() {
         let c1, b1, num1 = 0,d;
