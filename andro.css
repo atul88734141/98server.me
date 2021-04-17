@@ -17,20 +17,20 @@ body{
     color: rgb(88, 84, 86);
     caption-side: top;
     font-size: 70%;
-    margin-top: -5%;
+    margin-top: -1%;
     font-style: italic;
     padding-left: 27%;
 }#f0011{
     color: rgb(88, 84, 86);
     caption-side: top;
     font-size: 70%;
-    margin-top: -7%;
+    margin-top: -17%;
     font-style: italic;
     padding-left: 33%;}
 
 #total{
     caption-side: bottom;
-    padding-left: 35%;
+    padding-left: 30%;
     color : rgb(53, 72, 241);
 }
 #space{
@@ -59,14 +59,14 @@ body{
     position: absolute;
     color: aquamarine;
     margin-left: 1%;
-    margin-top: 40%;
+    margin-top: 44%;
 }
 #horizo1{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
     margin-left: 4%;
-    margin-top: 38%;
+    margin-top: 42%;
 }
 #horizo2{
     writing-mode: tb-rl;
