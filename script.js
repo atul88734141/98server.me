@@ -59,9 +59,9 @@ if (getOS() == "Android") {
     function horizon(){
         let c1 , b1 , d , num1 = 0 ;
         setInterval(() => {
-            c1 = '=', b1 = '', num1 = 0, d = random(30);
+            c1 = '=', b1 = '', num1 = 0, d = random(35);
             while (c1.length < d) { num1 += 2; c1 += "="; }
-            while (b1.length < 54 - num1) { b1 = b1 + "."; };
+            while (b1.length < 60 - num1) { b1 = b1 + "."; };
             horizo.innerText = '[' + b1 + "<" + c1 + ']';
             horizo1.innerText = '[' + b1 + "<" + c1 + ']';
             horizo2.innerText = '[' + b1 + "<" + c1 + ']';
