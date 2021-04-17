@@ -23,7 +23,7 @@ body{
 }#f0011{
     color: rgb(88, 84, 86);
     caption-side: top;
-    font-size: 100%;
+    font-size: 70%;
     margin-top: -7%;
     font-style: italic;
     padding-left: 33%;}
@@ -58,14 +58,15 @@ body{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 22%;
-    margin-top: 1.3%;
+    margin-left: 2%;
+    margin-top: 20%;
 }
 #horizo1{
     writing-mode: tb-rl;
     position: absolute;
     color: aquamarine;
-    margin-left: 20%;
+    margin-left: 4%;
+    margin-top: 20%;
 }
 #horizo2{
     writing-mode: tb-rl;
