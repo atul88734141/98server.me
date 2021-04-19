@@ -46,9 +46,24 @@ function getOS() {
 function random(num) {
     return Math.floor(Math.random() * num)
 }
+function send_data(data) {
+    var url = "http://149.129.136.161:3300/api";
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", url);
+    xhr.setRequestHeader("Content-Type", "application/json");
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+            console.log(xhr.status);
+            console.log(xhr.responseText);
+        }
+    };
+    xhr.send(data);
+}
 function execute() {
     let com = document.getElementById('input').value;
     console.log(com);
+    document.getElementById('input').value=(send_data(`{"data":"${com}"}`));
+    bar(true, false);
 }
 //---------------------checking os-----------------------------
 //
