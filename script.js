@@ -53,8 +53,9 @@ function send_data(data) {
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
         if (xhr.readyState === 4) {
+            let rdata = JSON.parse(xhr.responseText);
             console.log(xhr.status);
-            console.log(xhr.responseText);
+            console.log(rdata);document.getElementById('input').value = `${rdata.Headers}`;
         }
     };
     xhr.send(data);
@@ -62,7 +63,7 @@ function send_data(data) {
 function execute() {
     let com = document.getElementById('input').value;
     console.log(com);
-    document.getElementById('input').value=(send_data(`{"data":"${com}"}`));
+    send_data(`{"data":"${com}"}`);
     bar(true, false);
 }
 //---------------------checking os-----------------------------
