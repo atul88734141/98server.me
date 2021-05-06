@@ -100,3 +100,30 @@ body{
     margin-top: 44%;
     
 }
+
+.arc{
+    margin-left: 10%;
+    margin-top: -55%;
+    -webkit-transform:rotate(-50deg);
+    /* background-color: chartreuse; */
+    position: absolute;
+    height: 270px;
+    width: 224px;
+}
+ .arc1{
+    position: absolute;
+} 
+#textbox{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 1%;
+    background-color: rgb(10, 10, 10);
+    border-color: rgb(10, 10, 10);
+    font-size: 15px;
+    color: lightgoldenrodyellow;
+}
+
+#textbox::selection{
+    border:rgb(179, 81, 81);
+    color: blueviolet;
+}
