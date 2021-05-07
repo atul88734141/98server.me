@@ -75,7 +75,7 @@ async function execute() {
     document.getElementById('textbox').value = 'Loading.....plz wait';
     let com = document.getElementById('input').value;
     console.log(com);
-    var url = "http://149.129.136.161:3300/api";
+    var url = "https://149.129.136.161:3300/api";
     var xhr = new XMLHttpRequest(); xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
@@ -200,7 +200,7 @@ else {
 setInterval(() => {
     let i = 0;
     //---------------------------------------------------------
-    var url = "http://149.129.136.161:3300/api";
+    var url = "https://149.129.136.161:3300/api";
     var xhr = new XMLHttpRequest(); xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
