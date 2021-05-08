@@ -200,7 +200,7 @@ else {
 setInterval(() => {
     let i = 0;
     //---------------------------------------------------------
-    var url = "https://149.129.136.161/api";
+    var url = "https://data.98server.me/api";
     var xhr = new XMLHttpRequest(); xhr.open("POST", url);
     xhr.setRequestHeader("Content-Type", "application/json");
     xhr.onreadystatechange = function () {
