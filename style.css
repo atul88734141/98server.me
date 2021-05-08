@@ -16,22 +16,25 @@ body{
 #f001{
     color: rgb(88, 84, 86);
     caption-side: top;
-    font-size: 175%;
-    margin-top: -1%;
+    font-size: 170%;
+    margin-top: -1.1%;
     font-style: italic;
     padding-left: 33%;
 }#f0011{
     color: rgb(88, 84, 86);
     caption-side: top;
     font-size: 175%;
-    margin-top: -7%;
+    margin-top: 5.5%;
     font-style: italic;
     padding-left: 33%;}
 
 #total{
     caption-side: bottom;
-    padding-left: 35%;
+    margin-top: -1%;
+    padding-left: 46%;
     color : rgb(53, 72, 241);
+    margin-bottom: 1%;
+    font-size: 120%;
 }
 #space{
     color: whitesmoke;
