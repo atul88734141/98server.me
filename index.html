@@ -1,57 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" id="link" href='style.css'>
-    <title>COMMAND SeNdEr</title>
+
+
+<style>
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4CAF50;
+  position: fixed; /* or absolute */
+  top: 50%;
+  left: 50%;
+}
+button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+button:active{
+background:red;
+color:blue;
+}
+</style>
+
+<script>
+function led(){
+console.log('clicked');
+
+if (document.getElementById("myled").innerHTML == "LED ON"){
+document.getElementById("myled").innerHTML = "LED OFF";
+fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=0");
+}
+else{
+document.getElementById("myled").innerHTML = "LED ON";
+fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=1");
+
+}
+
+}
+</script>
+
 </head>
 
-<body>
-    <div><canvas id='arc1' class='arc' height="250" width="200"></canvas>
-    <canvas id='arc2' class='arc' height="250" width="200"></canvas>
-    <canvas id='arc3' class='arc' height="250" width="200"></canvas>
-    <canvas id='arc4' class='arc' height="250" width="200"></canvas>
-    <canvas id='arc5' class='arc' height="250" width="200"></canvas>
-    <canvas id='arc11' class='arc1' height="250" width="200"></canvas>
-    <canvas id='arc12' class='arc1' height="250" width="200"></canvas>
-    <canvas id='arc13' class='arc1' height="250" width="200"></canvas>
-    <canvas id='arc14' class='arc1' height="250" width="200"></canvas>
-    <canvas id='arc15' class='arc1' height="250" width="200"></canvas></div>
-    <div>
-    <div>
-        <span id="horizo">i have to become horizontal so i can become horizontal so no problem</span><br>
-        <span id="horizo1">i have to become horizontal so i can become horizontal so no problem</span><br>
-        <span id="horizo2">i have to become horizontal so i can become horizontal so no problem</span><br>
-        <span id="horizo3">i have to become horizontal so i can become horizontal so no problem</span><br>
-        <span id="horizo4">i have to become horizontal so i can become horizontal so no problem</span><br>
-        <span id="horizo5">i have to become horizontal so i can become horizontal so no problem </span><br>
-        
-    </div>
-    <div>
-        <h1 id='f0011'>cheaking network_1 : <span id="status1"></span></h1>
-        <h1 id='f001'>cheaking network_2 : <span id="status2"></span></h1>
-        <h1 id='f001'>cheaking network_3 : <span id="status3"></span></h1>
-        <h1 id='f001'>cheaking network_4 : <span id="status4"></span></h1>
-        <h1 id='f001'>cheaking network_5 : <span id="status5"></span></h1>
-        <h1 id='f001'>cheaking network_6 : <span id="status6"></span></h1>
-        <h1 id='f001'>cheaking network_7 : <span id="status7"></span></h1>
-        <h1 id='f001'>cheaking network_8 : <span id="status8"></span></h1>
-        <h1 id='f001'>cheaking network_9 : <span id="status9"></span></h1>
-        <h1 id='f001'>cheaking network_10 : <span id="status10"></span></h1>
-        <h1 id='total'>Total : </h1>
-        <span id='bar1'></span><br>
-        <span id='bar2'></span>
-        
 
-    </div>
-    <div>
-        <input type="text" id='input' placeholder="Execute Here"><input type="button" value="GO" id="button" onclick="execute()">
-        <textarea name="no" id="textbox" cols="30" rows="25"></textarea>
-    </div>
+<body>
+<button onclick="led()" id="myled">LED ON</button>
 </body>
-<script src="script.js"></script>
+
 
 </html>
