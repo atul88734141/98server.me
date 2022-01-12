@@ -38,15 +38,11 @@ console.log('clicked');
 
 if (document.getElementById("myled").innerHTML == "LED ON"){
 document.getElementById("myled").innerHTML = "LED OFF";
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=off");
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=off");
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=off");
+fetch("https://data.98server.me:2580/api?bulb=on");
 }
 else{
 document.getElementById("myled").innerHTML = "LED ON";
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=on");
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=on");
-fetch("https://api.thingspeak.com/update?api_key=QQEXML5D215PJQZE&field1=on");
+fetch("https://data.98server.me:2580/api?bulb=off");
 
 }
 
