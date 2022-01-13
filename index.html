@@ -34,7 +34,7 @@ color:blue;
 
 <script>
 
-function senddata(var url) {
+function senddata(url) {
 
 var xhr = new XMLHttpRequest();
 xhr.open("GET", url);
@@ -57,10 +57,12 @@ console.log('clicked');
 if (document.getElementById("myled").innerHTML == "LED ON"){
 document.getElementById("myled").innerHTML = "LED OFF";
 //fetch("http://data.98server.me:2580/api?bulb=on");
+senddata("http://data.98server.me:2580/api?bulb=on") ;
 }
 else{
 document.getElementById("myled").innerHTML = "LED ON";
 //fetch("http://data.98server.me:2580/api?bulb=off");
+senddata("http://data.98server.me:2580/api?bulb=off") ;
 
 }
 
