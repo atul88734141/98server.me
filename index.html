@@ -33,16 +33,34 @@ color:blue;
 </style>
 
 <script>
+
+function senddata(var url) {
+
+var xhr = new XMLHttpRequest();
+xhr.open("GET", url);
+
+xhr.onreadystatechange = function () {
+   if (xhr.readyState === 4) {
+      console.log(xhr.status);
+      console.log(xhr.responseText);
+   }};
+
+xhr.send();
+
+}
+
+
+
 function led(){
 console.log('clicked');
 
 if (document.getElementById("myled").innerHTML == "LED ON"){
 document.getElementById("myled").innerHTML = "LED OFF";
-fetch("http://data.98server.me:2580/api?bulb=on");
+//fetch("http://data.98server.me:2580/api?bulb=on");
 }
 else{
 document.getElementById("myled").innerHTML = "LED ON";
-fetch("http://data.98server.me:2580/api?bulb=off");
+//fetch("http://data.98server.me:2580/api?bulb=off");
 
 }
 
