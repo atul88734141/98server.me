@@ -41,11 +41,11 @@ console.log('clicked');
 
 if (document.getElementById("myled").innerHTML == "LED ON"){
 document.getElementById("myled").innerHTML = "LED OFF";
-fetch("https://47.241.220.243:2580/api?bulb=on");
+fetch("http://47.241.220.243:2580/api?bulb=on");
 }
 else{
 document.getElementById("myled").innerHTML = "LED ON";
-fetch("https://47.241.220.243:2580/api?bulb=off");
+fetch("http://47.241.220.243:2580/api?bulb=off");
 
 }
 
