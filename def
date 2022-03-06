@@ -27,7 +27,6 @@ server {
 
 
 	location / {
-		server {
     listen 80;
     server_name example.com;
     proxy_set_header   X-Forwarded-For $remote_addr;
